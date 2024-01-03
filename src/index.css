@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@font-face {
+  font-family: PublicSansBlack;
+  src: url("./assets/Public_Sans/static/PublicSans-Black.ttf");
+}
+
+@font-face {
+  font-family: PublicSansExtraBold;
+  src: url("./assets/Public_Sans/static/PublicSans-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: PublicSansBold;
+  src: url("./assets/Public_Sans/static/PublicSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: PublicSansSemiBold;
+  src: url("./assets/Public_Sans/static/PublicSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: PublicSansMedium;
+  src: url("./assets/Public_Sans/static/PublicSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: PublicSansRegular;
+  src: url("./assets/Public_Sans/static/PublicSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: PublicSansLight;
+  src: url("./assets/Public_Sans/static/PublicSans-Light.ttf");
+}
+
+.left-bg {
+  background: linear-gradient(
+        rgba(244, 246, 248, 0.88),
+        rgba(244, 246, 248, 0.88)
+      )
+      center center / cover no-repeat,
+    url("https://netlify-minimals-ui.netlify.app/assets/background/overlay_2.jpg");
+  background-position: center center;
+}
+
+.oauth {
+  width: 32px;
+  height: 32px;
+}
+
+.create {
+  color: rgb(0, 167, 111);
+  text-decoration: none;
+}

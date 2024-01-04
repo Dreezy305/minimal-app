@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Login from "./pages/Login";
+import Firebase from "./pages/auth/Firebase";
 import Jwt from "./pages/auth/Jwt";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Navigate to={"/auth/jwt"} />} />
           <Route path="/auth/jwt" element={<Jwt />} />
+          <Route path="/auth/firebase" element={<Firebase />} />
         </Routes>
       </BrowserRouter>
     </div>

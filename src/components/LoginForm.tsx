@@ -1,4 +1,8 @@
+import GitHubIcon from "@mui/icons-material/GitHub";
+import GoogleIcon from "@mui/icons-material/Google";
+import TwitterIcon from "@mui/icons-material/Twitter";
 import Visibility from "@mui/icons-material/Visibility";
+import { Divider, Stack } from "@mui/material";
 import Alert from "@mui/material/Alert";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
@@ -7,8 +11,9 @@ import TextField from "@mui/material/TextField";
 import React from "react";
 import { ReactComponent as EyeLid } from "../assets/eyelid.svg";
 import { ReactComponent as Info } from "../assets/info.svg";
+import { AUTH_TYPE } from "../types/types";
 
-function LoginForm(): JSX.Element {
+function LoginForm({ authType }: { authType?: string }): JSX.Element {
   const [showPassword, setShowPassword] = React.useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -35,18 +40,20 @@ function LoginForm(): JSX.Element {
         </div>
 
         <div className="flex flex-col space-y-5 w-full">
-          <Alert
-            severity="info"
-            sx={{
-              color: "rgb(0, 55, 104)",
-              backgroundColor: "rgb(202, 253, 245)",
-              borderRadius: "8px",
-            }}
-            icon={<Info />}
-          >
-            Use email : <strong>demo@minimals.cc</strong> / password :{" "}
-            <strong>demo1234</strong>
-          </Alert>
+          {authType === AUTH_TYPE.JWT && (
+            <Alert
+              severity="info"
+              sx={{
+                color: "rgb(0, 55, 104)",
+                backgroundColor: "rgb(202, 253, 245)",
+                borderRadius: "8px",
+              }}
+              icon={<Info />}
+            >
+              Use email : <strong>demo@minimals.cc</strong> / password :{" "}
+              <strong>demo1234</strong>
+            </Alert>
+          )}
           <TextField
             id="outlined-read-only-input"
             label={
@@ -122,6 +129,28 @@ function LoginForm(): JSX.Element {
           >
             Login
           </Button>
+
+          {authType === AUTH_TYPE.FIREBASE && (
+            <>
+              <Divider>
+                <span className="font-PublicSansMedium or text-sm font-bold">
+                  OR
+                </span>
+              </Divider>
+
+              <Stack direction="row" spacing={1} justifyContent={"center"}>
+                <IconButton aria-label="delete">
+                  <GoogleIcon sx={{ color: "rgb(223, 62, 48)" }} />
+                </IconButton>
+                <IconButton aria-label="delete" disabled color="primary">
+                  <GitHubIcon sx={{ color: "#000" }} />
+                </IconButton>
+                <IconButton color="secondary" aria-label="add an alarm">
+                  <TwitterIcon sx={{ color: "rgb(28, 156, 234)" }} />
+                </IconButton>
+              </Stack>
+            </>
+          )}
         </div>
       </div>
     </form>

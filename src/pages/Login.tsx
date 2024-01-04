@@ -10,12 +10,12 @@ import LoginForm from "../components/LoginForm";
 
 function Login(): JSX.Element {
   return (
-    <main className="">
+    <main className="relative">
+      <a href="/" className="m-8 absolute top-4 left-4">
+        <img src={Logo} alt="minimal" className="oauth" />
+      </a>
       <div className="flex flex-row items-start justify-center">
         <div className="w-2/3 min-h-screen left-bg flex flex-col space-y-6 items-center justify-between py-12">
-          {/* <a href="/" className="m-8" hidden>
-            <img src={Logo} alt="minimal" className="oauth" />
-          </a> */}
           <h3 className="font-PublicSansBold text-3xl text-black pt-5">
             Hi, Welcome back
           </h3>

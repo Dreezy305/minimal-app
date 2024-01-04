@@ -10,11 +10,15 @@ import Tooltips from "./Tooltips";
 function AuthLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
     <main className="relative">
-      <a href="/" className="m-8 absolute top-4 left-4">
+      <a
+        href="/"
+        className="m-8 absolute lg:top-4 lg:left-4 xl:top-4 xl:left-4"
+      >
         <img src={Logo} alt="minimal" className="oauth" />
       </a>
+
       <div className="flex flex-row items-start justify-center">
-        <div className="w-2/3 min-h-screen left-bg flex flex-col space-y-6 items-center justify-between py-12">
+        <div className="hidden md:hidden lg:w-2/3 xl:w-2/3 min-h-screen left-bg lg:flex lg:flex-col lg:space-y-6 lg:items-center lg:justify-between xl:flex xl:flex-col xl:space-y-6 xl:items-center xl:justify-between py-12">
           <h3 className="font-PublicSansBold text-3xl text-black pt-5">
             Hi, Welcome back
           </h3>

@@ -11,6 +11,7 @@ import TextField from "@mui/material/TextField";
 import React from "react";
 import { ReactComponent as EyeLid } from "../assets/eyelid.svg";
 import { ReactComponent as Info } from "../assets/info.svg";
+import Logo from "../assets/logo.svg";
 import { AUTH_TYPE } from "../types/types";
 
 function LoginForm({ authType }: { authType?: string }): JSX.Element {
@@ -19,8 +20,8 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
   const handleClickShowPassword = () => setShowPassword((show) => !show);
 
   return (
-    <form className="w-1/3 flex flex-col px-6 pt-16 mt-16">
-      <div className="w-4/5 mx-auto flex flex-col space-y-12 pt-12">
+    <form className="w-full md:w-11/12 lg:w-1/3 xl:w-1/3 flex flex-col px-6 pt-16 mt-16">
+      <div className="w-full md:w-11/12 lg:w-4/5 xl:w-4/5 mx-auto flex flex-col space-y-12 pt-12">
         <div className="flex flex-col space-y-3">
           <h3 className="text-2xl font-bold font-PublicSansBold">
             Sign in to Minimal

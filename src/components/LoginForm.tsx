@@ -40,6 +40,7 @@ function LoginForm(): JSX.Element {
             sx={{
               color: "rgb(0, 55, 104)",
               backgroundColor: "rgb(202, 253, 245)",
+              borderRadius: "8px",
             }}
             icon={<Info />}
           >
@@ -47,7 +48,6 @@ function LoginForm(): JSX.Element {
             <strong>demo1234</strong>
           </Alert>
           <TextField
-            required
             id="outlined-read-only-input"
             label={
               <span
@@ -63,11 +63,12 @@ function LoginForm(): JSX.Element {
               ffontFamily: "PublicSansRegular !important",
               fontSize: "1rem",
             }}
+            size="medium"
           />
 
           <TextField
-            required
             id="outlined-required"
+            size="medium"
             label={
               <span
                 className="font-PublicSansRegular text-base"

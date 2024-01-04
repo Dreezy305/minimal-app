@@ -73,3 +73,15 @@ code {
   color: rgb(0, 167, 111);
   text-decoration: none;
 }
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  /* height: 1.4375em !important;
+  padding: 16.5px 14px !important; */
+}
+
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+  border-radius: 8px !important;
+  /* height: 1.4375em !important;
+  padding: 16.5px 14px !important; */
+}

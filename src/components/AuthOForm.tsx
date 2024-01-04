@@ -9,18 +9,6 @@ function AuthOForm(): JSX.Element {
           <h3 className="text-2xl font-bold font-PublicSansBold">
             Sign in to Minimal
           </h3>
-
-          <div className="flex flex-row items-center space-x-1">
-            <span className="text-black font-normal text-sm font-PublicSansRegular leading-6">
-              New user?{" "}
-            </span>
-            <a
-              href="/"
-              className="create font-semibold font-PublicSansSemiBold leading-6 hover:underline cursor-pointer"
-            >
-              Create an account
-            </a>
-          </div>
         </div>
 
         <Stack spacing={2}>

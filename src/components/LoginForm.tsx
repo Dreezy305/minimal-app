@@ -58,7 +58,7 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
             id="outlined-read-only-input"
             label={
               <span
-                className="font-PublicSansRegular text-base"
+                className="font-PublicSansRegular"
                 style={{ color: "rgb(99, 115, 129)" }}
               >
                 Email Address
@@ -69,6 +69,8 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
             sx={{
               ffontFamily: "PublicSansRegular !important",
               fontSize: "1rem",
+              outline: "none !important",
+              boxShadow: "none !important",
             }}
             size="medium"
           />
@@ -78,7 +80,7 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
             size="medium"
             label={
               <span
-                className="font-PublicSansRegular text-base"
+                className="font-PublicSansRegular"
                 style={{ color: "rgb(99, 115, 129)" }}
               >
                 Password
@@ -89,6 +91,8 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
             sx={{
               fontFamily: "PublicSansRegular !important",
               fontSize: "1rem",
+              outline: "none !important",
+              boxShadow: "none !important",
             }}
             InputProps={{
               endAdornment: (

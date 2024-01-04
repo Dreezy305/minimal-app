@@ -18,7 +18,7 @@ function AuthLayout({ children }: { children: React.ReactNode }): JSX.Element {
       </a>
 
       <div className="flex flex-row items-start justify-center">
-        <div className="hidden md:hidden lg:w-2/3 xl:w-2/3 min-h-screen left-bg lg:flex lg:flex-col lg:space-y-6 lg:items-center lg:justify-between xl:flex xl:flex-col xl:space-y-6 xl:items-center xl:justify-between py-12">
+        <div className="hidden md:hidden lg:w-2/3 xl:w-2/3 min-h-screen left-bg lg:flex lg:flex-col lg:space-y-6 lg:items-center lg:justify-between xl:flex xl:flex-col xl:space-y-6 xl:items-center xl:justify-between lg:py-8 xl:py-12">
           <h3 className="font-PublicSansBold text-3xl text-black pt-5">
             Hi, Welcome back
           </h3>

@@ -11,7 +11,6 @@ import TextField from "@mui/material/TextField";
 import React from "react";
 import { ReactComponent as EyeLid } from "../assets/eyelid.svg";
 import { ReactComponent as Info } from "../assets/info.svg";
-import Logo from "../assets/logo.svg";
 import { AUTH_TYPE } from "../types/types";
 
 function LoginForm({ authType }: { authType?: string }): JSX.Element {

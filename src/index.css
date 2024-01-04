@@ -55,13 +55,18 @@ code {
 }
 
 .left-bg {
-  background: linear-gradient(
+  /* background: linear-gradient(
         rgba(244, 246, 248, 0.88),
         rgba(244, 246, 248, 0.88)
       )
       center center / cover no-repeat,
-    url("https://netlify-minimals-ui.netlify.app/assets/background/overlay_2.jpg");
-  background-position: center center;
+    url("https://netlify-minimals-ui.netlify.app/assets/background/overlay_2.jpg"); */
+  background: linear-gradient(
+      rgba(244, 246, 248, 0.88),
+      rgba(244, 246, 248, 0.88)
+    )
+    center center / cover no-repeat;
+  /* background-position: center center; */
 }
 
 .oauth {

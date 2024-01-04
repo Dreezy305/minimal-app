@@ -22,7 +22,11 @@ function AuthLayout({ children }: { children: React.ReactNode }): JSX.Element {
           <h3 className="font-PublicSansBold text-3xl text-black pt-5">
             Hi, Welcome back
           </h3>
-          <img src={Illustration} alt="minimal" className="" />
+          <img
+            src={Illustration}
+            alt="minimal"
+            className="lg:max-w-[560px] xl:max-w-[720px]:"
+          />
           <div className="flex flex-row items-center justify-center space-x-5 pb-5">
             <Tooltips
               title="jwt"

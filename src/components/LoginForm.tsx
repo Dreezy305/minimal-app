@@ -47,6 +47,7 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
                 color: "rgb(0, 55, 104)",
                 backgroundColor: "rgb(202, 253, 245)",
                 borderRadius: "8px",
+                fontSize: "0.875rem",
               }}
               icon={<Info />}
             >

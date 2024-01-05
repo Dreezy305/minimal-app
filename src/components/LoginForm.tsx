@@ -67,10 +67,7 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
             defaultValue="demo@minimals.cc"
             type="email"
             sx={{
-              ffontFamily: "PublicSansRegular !important",
-              fontSize: "1rem",
-              outline: "none !important",
-              boxShadow: "none !important",
+              fontFamily: "PublicSansRegular !important",
             }}
             size="medium"
           />
@@ -90,9 +87,6 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
             type={showPassword ? "text" : "password"}
             sx={{
               fontFamily: "PublicSansRegular !important",
-              fontSize: "1rem",
-              outline: "none !important",
-              boxShadow: "none !important",
             }}
             InputProps={{
               endAdornment: (

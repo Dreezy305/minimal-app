@@ -55,18 +55,11 @@ code {
 }
 
 .left-bg {
-  /* background: linear-gradient(
-        rgba(244, 246, 248, 0.88),
-        rgba(244, 246, 248, 0.88)
-      )
-      center center / cover no-repeat,
-    url("https://netlify-minimals-ui.netlify.app/assets/background/overlay_2.jpg"); */
   background: linear-gradient(
       rgba(244, 246, 248, 0.25),
       rgba(244, 246, 248, 0.25)
     )
     center center / cover no-repeat;
-  /* background-position: center center; */
 }
 
 .oauth {
@@ -82,14 +75,10 @@ code {
 
 .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 8px !important;
-  /* height: 1.4375em !important;
-  padding: 16.5px 14px !important; */
 }
 
 .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
   border-radius: 8px !important;
-  /* height: 1.4375em !important;
-  padding: 16.5px 14px !important; */
 }
 
 .or {

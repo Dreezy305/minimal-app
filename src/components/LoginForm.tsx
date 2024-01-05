@@ -106,7 +106,7 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
 
           <a
             href="/"
-            className="font-normal font-PublicSansRegular leading-6 hover:underline cursor-pointer float-right place-self-end underline"
+            className="font-normal font-PublicSansRegular leading-6 hover:underline cursor-pointer float-right place-self-end underline text-sm"
           >
             Forgot password?
           </a>

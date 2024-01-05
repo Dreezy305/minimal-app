@@ -26,13 +26,13 @@ function LoginForm({ authType }: { authType?: string }): JSX.Element {
             Sign in to Minimal
           </h3>
 
-          <div className="flex flex-row items-center space-x-1">
+          <div className="flex flex-row items-center space-x-1 text-sm">
             <span className="text-black font-normal text-sm font-PublicSansRegular leading-6">
               New user?{" "}
             </span>
             <a
               href="/"
-              className="create font-semibold font-PublicSansSemiBold leading-6 hover:underline cursor-pointer"
+              className="create font-semibold font-PublicSansSemiBold leading-6 hover:underline cursor-pointer text-sm"
             >
               Create an account
             </a>

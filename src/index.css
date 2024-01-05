@@ -77,6 +77,7 @@ code {
 .create {
   color: rgb(0, 167, 111);
   text-decoration: none;
+  font-size: 0.875rem;
 }
 
 .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {

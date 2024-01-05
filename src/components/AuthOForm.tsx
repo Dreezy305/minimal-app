@@ -6,7 +6,7 @@ function AuthOForm(): JSX.Element {
     <div className="w-full md:w-11/12 lg:w-1/3 xl:w-1/3 flex flex-col px-6 pt-16 mt-16">
       <div className="w-full md:w-11/12 lg:w-4/5 xl:w-4/5 mx-auto flex flex-col space-y-12 pt-12">
         <div className="flex flex-col space-y-3">
-          <h3 className="text-2xl font-bold font-PublicSansBold">
+          <h3 className="text-xl md:text-xl lg:text-xl xl:text-2xl font-bold font-PublicSansBold">
             Sign in to Minimal
           </h3>
         </div>

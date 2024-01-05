@@ -62,8 +62,8 @@ code {
       center center / cover no-repeat,
     url("https://netlify-minimals-ui.netlify.app/assets/background/overlay_2.jpg"); */
   background: linear-gradient(
-      rgba(244, 246, 248, 0.3),
-      rgba(244, 246, 248, 0.3)
+      rgba(244, 246, 248, 0.25),
+      rgba(244, 246, 248, 0.25)
     )
     center center / cover no-repeat;
   /* background-position: center center; */
